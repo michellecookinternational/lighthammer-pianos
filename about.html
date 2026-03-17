@@ -73,7 +73,10 @@
   <div class="footer-inner">
     <div class="footer-brand">LightHammer Pianos</div>
     <p>Edward McMorrow, RPT &mdash; Mukilteo, Washington<br>&copy; <span id="yr"></span> LightHammer Pianos. All rights reserved.</p>
-    <p class="footer-contact"><a href="tel:4252993431">(425) 299-3431</a> &nbsp;&bull;&nbsp; <a href="mailto:ed@lighthammerpiano.com">ed@lighthammerpiano.com</a></p>
+    <p class="footer-contact">document.querySelectorAll('.ph-num').forEach(function(el) {
+  el.textContent = '299-' + '3431';
+  el.parentElement.href = 'tel:425' + '299' + '3431';
+}); &nbsp;&bull;&nbsp; <a href="mailto:ed@lighthammerpiano.com">ed@lighthammerpiano.com</a></p>
   </div>
 </footer>
 
@@ -82,6 +85,10 @@ document.getElementById('yr').textContent = new Date().getFullYear();
 var tog = document.getElementById('navToggle');
 var links = document.getElementById('navLinks');
 tog.addEventListener('click', function() { tog.classList.toggle('open'); links.classList.toggle('open'); });
+  document.querySelectorAll('.ph-num').forEach(function(el) {
+  el.textContent = '299-' + '3431';
+  el.parentElement.href = 'tel:425' + '299' + '3431';
+});
 </script>
 </body>
 </html>
