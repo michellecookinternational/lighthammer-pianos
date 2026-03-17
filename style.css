@@ -889,3 +889,7 @@ a:hover { color: #F0A840; }
     display: none;
   }
 }
+
+.page-title-bar p {
+  text-wrap: balance;
+}
