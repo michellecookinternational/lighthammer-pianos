@@ -244,14 +244,12 @@ a:hover { color: #F0A840; }
 }
 .pathway-img {
   width: 100%;
-  height: 350px;
   overflow: hidden;
 }
 .pathway-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .5s;
+  height: auto;
+  display: block;
 }
 .pathway:hover .pathway-img img { transform: scale(1.05); }
 .pathway h3 {
