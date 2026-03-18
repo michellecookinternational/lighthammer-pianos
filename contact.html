@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | LightHammer Pianos | Ed McMorrow, RPT</title>
+<meta name="description" content="Contact Ed McMorrow at LightHammer Pianos. Piano rebuilding, sales, and consultation. Mukilteo, Washington.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo-hammer.png" alt="LightHammer Pianos" class="nav-hammer">
+      <span class="nav-wordmark">LightHammer <em>Pianos</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="science.html">The Science</a></li>
+      <li><a href="pianos.html">Pianos</a></li>
+      <li><a href="about.html">Ed</a></li>
+      <li><a href="book.html">Ed's Book</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-img">
+  <picture>
+    <source media="(max-width: 1024px)" srcset="images/contact-mobile-tablet.png">
+    <img src="images/ed-rebuilding-pianos-lighthammer.png" alt="Ed McMorrow rebuilding pianos at LightHammer Pianos">
+  </picture>
+</div>
+
+<section class="content-section">
+  <div class="content-inner">
+    <div class="contact-layout">
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-lbl">Phone</div>
+            <div class="contact-val"><a href="#" class="ph-link">(425) <span class="ph-num"></span></a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-lbl">Email</div>
+            <div class="contact-val"><a href="mailto:ed@lighthammerpiano.com">ed@lighthammerpiano.com</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-lbl">Location</div>
+            <div class="contact-val">Mukilteo, Washington</div>
+            <p style="font-size:.82rem; color:#C8C0B4; margin-top:.25rem; line-height:1.6;">Shop visits by appointment</p>
+            <a href="https://www.google.com/maps/search/Mukilteo+Washington" target="_blank" rel="noopener" class="text-link" style="margin-top:.5rem;">View Map &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-KEY">
+          <input type="hidden" name="subject" value="LightHammer Pianos — New Contact Form Submission">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone <span style="font-weight:300;text-transform:none;letter-spacing:0;font-size:.7rem;">(optional)</span></label>
+          <input type="tel" id="phone" name="phone">
+          <label for="interest">I'm Interested In</label>
+          <select id="interest" name="interest">
+            <option value="">Select one...</option>
+            <option value="piano-rebuilding">Piano rebuilding</option>
+            <option value="piano-purchase">Purchasing a piano</option>
+            <option value="consultation">Consultation</option>
+            <option value="the-book">The Educated Piano (book)</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LightHammer Pianos</div>
+    <p>Edward McMorrow, RPT &mdash; Mukilteo, Washington<br>&copy; <span id="yr"></span> LightHammer Pianos. All rights reserved.</p>
+    <p class="footer-contact"><a href="#" class="ph-link">(425) <span class="ph-num"></span></a> &nbsp;&bull;&nbsp; <a href="mailto:ed@lighthammerpiano.com">ed@lighthammerpiano.com</a></p>
+    <p class="footer-social"><a href="https://www.facebook.com/lighthammerpianos" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var tog = document.getElementById('navToggle');
+var links = document.getElementById('navLinks');
+tog.addEventListener('click', function() { tog.classList.toggle('open'); links.classList.toggle('open'); });
+document.querySelectorAll('.ph-num').forEach(function(el) {
+  el.textContent = '299-' + '3431';
+  el.parentElement.href = 'tel:425' + '299' + '3431';
+});
+</script>
+</body>
+</html>

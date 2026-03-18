@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Educated Piano | Ed's Book | LightHammer Pianos</title>
+<meta name="description" content="The Educated Piano by Edward McMorrow, RPT. The only professional text on developing the feel and tone of a piano simultaneously.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo-hammer.png" alt="LightHammer Pianos" class="nav-hammer">
+      <span class="nav-wordmark">LightHammer <em>Pianos</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="science.html">The Science</a></li>
+      <li><a href="pianos.html">Pianos</a></li>
+      <li><a href="about.html">Ed</a></li>
+      <li><a href="book.html" class="active">Ed's Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-img">
+  <img src="images/DuplexBridge4.jpg" alt="Duplex bridge detail on a piano">
+</div>
+
+<section class="content-section">
+  <div class="content-inner">
+    <div class="book-layout">
+      <div class="book-cover">
+        <div class="pub">Light Hammer Press</div>
+        <div class="title">The Educated Piano</div>
+        <div class="sub">A treatise on the structural relationships essential for fine piano tone</div>
+        <div class="author">Edward McMorrow, RPT</div>
+      </div>
+      <div class="book-info">
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:#fff;margin-bottom:1.5rem;line-height:1.25;"><em style="color:#E09430;">The Educated Piano</em></h2>
+        <p><em>The Educated Piano</em> is the only professional text that treats developing the feel and tone of a piano simultaneously. Written for practicing technicians, it assumes a foundation in the general principles of piano service and the ability to reason from first principles.</p>
+        <p>The book draws on Ed's decades of research into the structural relationships that govern piano tone: hammer weight, action leverage, string scaling, duplex interactions, and the acoustic behavior of the soundboard. It is both a theoretical framework and a practical guide, connecting the physics of sound production to the hands-on procedures that produce musical results.</p>
+        <div class="book-highlight">Ed titled it <em>The Educated Piano</em> because the work happens to the instrument itself. The piano is educated through the technician's knowledge, skill, and intention.</div>
+        <p>Since its publication, the book has become a reference for technicians worldwide who seek to move beyond routine service into the deeper craft of tonal development.</p>
+        <div class="book-details">
+          <strong>Title:</strong> The Educated Piano<br>
+          <strong>Author:</strong> Edward McMorrow, RPT<br>
+          <strong>Publisher:</strong> Light Hammer Press<br>
+          <strong>ISBN:</strong> 0-929738-00-4<br>
+          <strong>Price:</strong> $119.95 USD<br><br>
+          To order, contact Ed directly at <a href="mailto:ed@lighthammerpiano.com" style="color:#E09430;">ed@lighthammerpiano.com</a> or call <a href="#" class="ph-link" style="color:#E09430;">(425) <span class="ph-num"></span></a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LightHammer Pianos</div>
+    <p>Edward McMorrow, RPT &mdash; Mukilteo, Washington<br>&copy; <span id="yr"></span> LightHammer Pianos. All rights reserved.</p>
+    <p class="footer-contact"><a href="#" class="ph-link">(425) <span class="ph-num"></span></a> &nbsp;&bull;&nbsp; <a href="mailto:ed@lighthammerpiano.com">ed@lighthammerpiano.com</a></p>
+    <p class="footer-social"><a href="https://www.facebook.com/lighthammerpianos" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var tog = document.getElementById('navToggle');
+var links = document.getElementById('navLinks');
+tog.addEventListener('click', function() { tog.classList.toggle('open'); links.classList.toggle('open'); });
+document.querySelectorAll('.ph-num').forEach(function(el) {
+  el.textContent = '299-' + '3431';
+  el.parentElement.href = 'tel:425' + '299' + '3431';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pianos | LightHammer Pianos | Ed McMorrow, RPT</title>
+<meta name="description" content="Curated inventory of rebuilt Steinway, Mason &amp; Hamlin, Chickering, Baldwin, and other fine pianos by Ed McMorrow, RPT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/logo-hammer.png" alt="LightHammer Pianos" class="nav-hammer">
+      <span class="nav-wordmark">LightHammer <em>Pianos</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="science.html">The Science</a></li>
+      <li><a href="pianos.html" class="active">Pianos</a></li>
+      <li><a href="about.html">Ed</a></li>
+      <li><a href="book.html">Ed's Book</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-img">
+  <picture>
+    <source media="(max-width: 1024px)" srcset="images/pianos-mobile-tablet.png">
+    <img src="images/ed-mcmorrow-pianos.png" alt="LightHammer Pianos — Instruments rebuilt to their highest potential">
+  </picture>
+</div>
+
+<section class="content-section">
+  <div class="content-inner">
+    <div class="prose-match" style="max-width:750px;">
+      <p>Every piano in Ed's shop has been carefully evaluated, selected, and rebuilt to meet the LightHammer standard. These are instruments from the finest American and European makers, each one engineered and customized to bring out its highest possible tonal and mechanical capability.</p>
+      <p>Ed specializes in Steinway, Mason &amp; Hamlin, Chickering, Baldwin, and other instruments of exceptional original design. Each piano receives his complete rebuilding process, including LightHammer Tone Regulation, and is ready to be played and enjoyed for decades to come.</p>
+      <p>Availability changes as instruments are completed and sold. Contact Ed directly to discuss current inventory, commission a specific rebuild, or bring your own instrument to the shop for evaluation.</p>
+      <a href="contact.html" class="text-link">Contact Ed About Available Pianos &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt-bg">
+  <div class="content-inner" style="text-align:center; padding: 3rem 0;">
+    <div class="section-label" style="justify-content:center;">Current Inventory</div>
+    <p style="color:#C8C0B4; font-size:1rem; max-width:500px; margin:0 auto;">Piano listings and photos coming soon.</p>
+    <p style="color:#C8C0B4; font-size:1rem; max-width:500px; margin:.5rem auto 0;">Contact Ed at <a href="#" class="ph-link" style="color:#E09430;">(425) <span class="ph-num"></span></a> for current availability.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">LightHammer Pianos</div>
+    <p>Edward McMorrow, RPT &mdash; Mukilteo, Washington<br>&copy; <span id="yr"></span> LightHammer Pianos. All rights reserved.</p>
+    <p class="footer-contact"><a href="#" class="ph-link">(425) <span class="ph-num"></span></a> &nbsp;&bull;&nbsp; <a href="mailto:ed@lighthammerpiano.com">ed@lighthammerpiano.com</a></p>
+    <p class="footer-social"><a href="https://www.facebook.com/lighthammerpianos" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var tog = document.getElementById('navToggle');
+var links = document.getElementById('navLinks');
+tog.addEventListener('click', function() { tog.classList.toggle('open'); links.classList.toggle('open'); });
+document.querySelectorAll('.ph-num').forEach(function(el) {
+  el.textContent = '299-' + '3431';
+  el.parentElement.href = 'tel:425' + '299' + '3431';
+});
+</script>
+</body>
+</html>
